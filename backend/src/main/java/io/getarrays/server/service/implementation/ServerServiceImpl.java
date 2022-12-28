@@ -1,21 +1,21 @@
-package com.example.demo.service.implementation;
+package io.getarrays.server.service.implementation;
 
-import com.example.demo.model.Server;
-import com.example.demo.repo.ServerRepo;
-import com.example.demo.service.ServerService;
+import io.getarrays.server.model.Server;
+import io.getarrays.server.repo.ServerRepo;
+import io.getarrays.server.service.ServerService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
-import jakarta.transaction.Transactional;
+import javax.transaction.Transactional;
 import java.io.IOException;
 import java.net.InetAddress;
 import java.util.Collection;
 import java.util.Random;
 
-import static com.example.demo.enumeration.Status.SERVER_UP;
-import static com.example.demo.enumeration.Status.SERVER_DOWN;
+import static io.getarrays.server.enumeration.Status.SERVER_UP;
+import static io.getarrays.server.enumeration.Status.SERVER_DOWN;
 import static java.lang.Boolean.TRUE;
 import static org.springframework.data.domain.PageRequest.of;
 

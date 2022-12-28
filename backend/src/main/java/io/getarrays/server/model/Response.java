@@ -1,4 +1,4 @@
-package com.example.demo.model;
+package io.getarrays.server.model;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.Data;
@@ -14,7 +14,7 @@ import static com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL;
 @SuperBuilder
 @JsonInclude(NON_NULL)
 public class Response {
-    protected LocalDateTime timestamp;
+    protected LocalDateTime timeStamp;
     protected int statusCode;
     protected HttpStatus status;
     protected String reason;

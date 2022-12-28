@@ -1,6 +1,6 @@
-package com.example.demo.service;
+package io.getarrays.server.service;
 
-import com.example.demo.model.Server;
+import io.getarrays.server.model.Server;
 
 import java.io.IOException;
 import java.util.Collection;

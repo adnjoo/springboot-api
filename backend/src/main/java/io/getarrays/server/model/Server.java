@@ -1,24 +1,24 @@
-package com.example.demo.model;
+package io.getarrays.server.model;
 
-import com.example.demo.enumeration.Status;
+import io.getarrays.server.enumeration.Status;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
-import static javax.persistence.GenerationType.AUTO;
-import javax.persistence.Column;
 import javax.validation.constraints.NotEmpty;
 
-import lombok.Data;
-import lombok.NoArgsConstructor;
-import lombok.AllArgsConstructor;
+import static javax.persistence.GenerationType.AUTO;
 
 @Entity
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 public class Server {
-    @Id 
+    @Id
     @GeneratedValue(strategy = AUTO)
     private Long id;
     @Column(unique = true)
